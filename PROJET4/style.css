@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+body{
+    background-image: url('/imagens/wallpaper001.jpg');
+}
+
 .quadrado{
     display: inline-block;
     height: 200px;
