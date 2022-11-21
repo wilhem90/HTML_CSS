@@ -14,13 +14,14 @@
 }
 
 #q1{
-    background-color: rgba(0, 0, 255, 0.152);
+    background-color: rgba(252, 37, 234, 0.152);
 }
 
 #q2{
     background-color: rgba(0, 0, 255, 0.152);
+    background-image: linear-gradient(to right, yellow, red 150%);
 }
 
 #q3{
-    background-color: rgba(0, 0, 255, 0.152);
+    background-image: url('/imagens/pattern003.png');
 }
