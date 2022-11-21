@@ -1,0 +1,10 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url('https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png');
+    background-size: 100px 100px;
+    
+}

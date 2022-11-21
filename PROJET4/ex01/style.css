@@ -13,12 +13,16 @@ body{
     height: 200px;
     width: 200px;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #f8f4f477;
+
 }
 
 #q1{
-    background-color: rgba(252, 37, 234, 0.152);
+    background-color: rgba(252, 37, 234, 0.322);
 }
 
 #q2{
@@ -28,4 +32,10 @@ body{
 
 #q3{
     background-image: url('/imagens/pattern003.png');
+}
+
+h1{
+    background-color: #f8f4f4b6;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 3px rgba(0, 0, 0, 0.421);
 }
