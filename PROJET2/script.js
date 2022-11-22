@@ -2,7 +2,7 @@ var imLista = document.getElementById('imp')
 
 
 
-//Vamos criar uma lista com alguns dados pessol!
+//Vamos criar uma lista com alguns dados pessoal!
 
 var listaDedaos = [
 {nome: 'Wilhem Wundt', sobrenome: 'Maxime', idade: '32', peso: '105', endereco:'Chapeco', universidade: 'UFFS', priodo: 'Quinto periodo'},
