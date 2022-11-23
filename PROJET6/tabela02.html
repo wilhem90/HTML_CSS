@@ -29,6 +29,10 @@
             padding-left: 15px;
         }
 
+        .num:hover{
+            background-color:rgba(255, 255, 0, 0.689);
+        }
+
         .num{
             text-align: center;
         }
@@ -52,21 +56,33 @@
             text-align: center;
             
         }
+
+        h1:hover{
+
+            background-color: rgba(0, 255, 255, 0.547);
+        }
+
+        caption{
+            padding: 10px;
+            font-size: 1.1em;
+            background-color: rgba(128, 128, 128, 0.379);
+        }
         
 
     </style>
 </head>
 <body>
-    
+    <sub>2-Tabela</sub>
     <main class="main">
         <table>
             <h1>Todos os estados do brasil</h1>
+            
             <thead>
         
-                <th id="table">
+                <th id="table" scope="col">
                     <div id="estado">Estados</div>
                 </th>
-                <th class="table">
+                <th class="table" scope="col">
                     <div id="populacao">Populacao</div>
                 </th>
             </thead>
@@ -177,10 +193,12 @@
             </tr>
             <tfoot>
                 <tr>
-                    <th><strong>Total Habitantes</strong></th>
+                    <th scope="row"><strong>Total Habitantes</strong></th>
                     <td class="num"><strong>190.022.240</strong></td>
                 </tr>
             </tfoot>
+
+            <caption>População das Unidades Federativas</caption>
         </table>
     </main>
 
