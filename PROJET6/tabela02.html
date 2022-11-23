@@ -19,6 +19,7 @@
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+            
            
         }
         td, th{
@@ -47,6 +48,7 @@
             width: 600px;
             padding: 10px;
             border: 2px solid black;
+            
         }
 
         h1{
@@ -71,6 +73,12 @@
         tr:nth-child(2n){
             background-color: lightgray;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
+        }
         
 
     </style>
@@ -83,12 +91,14 @@
             
             <thead>
         
-                <th id="table" scope="col">
-                    <div id="estado">Estados</div>
-                </th>
-                <th class="table" scope="col">
-                    <div id="populacao">Populacao</div>
-                </th>
+                <tr>
+                    <th id="table" scope="col">
+                        <div id="estado">Estados</div>
+                    </th>
+                    <th class="table" scope="col">
+                        <div id="populacao">Populacao</div>
+                    </th>
+                </tr>
             </thead>
             <tr class="row">
                 <td>São Paulo</td>
