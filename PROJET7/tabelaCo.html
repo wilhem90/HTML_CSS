@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Completa</title>
+
+    <style>
+        .corpo{
+            background-color: rgba(255, 249, 249, 0.378);
+            width: 650px;
+            border: 1px solid black;
+            height: 500px;
+            margin: 15px;
+            padding-top: 20px;
+            font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+
+        }
+
+        #tabela{
+            margin: auto;
+            border-collapse: collapse;
+            width: 600px;
+        }
+        
+        td, th{
+    
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .filmes, .nomes, #cabeca, .mulheres, .homens{
+            text-align: center;
+            font-weight: bold;
+        }
+
+        tr:nth-child(2n){
+            background-color: rgba(0, 0, 0, 0.16);
+        }
+
+        #homens{
+            background-color: rgba(181, 16, 16, 0.378);
+        }
+
+        p{
+            text-indent: 15px;
+            padding: 10px 10px 10px;
+            margin-left: 15px;
+            margin-right: 10px;
+        }
+
+        caption{
+            margin-bottom: 15px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main class="corpo">
+        
+            <table id="tabela">
+                <thead id="cabeca">
+                    <tr class="colunmaone">
+                        <th class="grupo" scope="col">Grupo</th>
+                        <th class="nomes" scope="col">Nomes</th>
+                        <th class="filmes" colspan="3" scope="colgroup">Filmes</th>
+                    </tr>
+                </thead>
+
+                <tr class="linhaone">
+                    <th class="mulheres" rowspan="3" scope="rowgroup">Mulheres</td>
+                    <td class="nome">Ana Maria Santos</td>
+                    <td class="filme">Alien</td>
+                    <td class="filme">Rambo</td>
+                    <td class="filme">Vingadores</td>
+                </tr>
+
+                <tr class="linhaone">
+                    <td class="nome">Beatriz Sousa</td>
+                    <td class="filme">Hulk</td>
+                    <td class="filme">Inception</td>
+                    <td class="filme">Batman</td>
+                </tr>
+
+                <tr class="linhaone">
+                    <td class="nome">Cláudio Melo</td>
+                    <td class="filme">Oblivíon</td>
+                    <td class="filme">Matrix</td>
+                    <td class="filme">Big Hero</td>
+                </tr>
+
+                <tr class="linhaone">
+                    <th class="homens" rowspan="3" scope="rowgroup">Homens</td>
+                    <td class="nome">Bruno Mendonça</td>
+                    <td class="filme">Intocáveis</td>
+                    <td class="filme">Amnésia</td>
+                    <td class="filme">Gladiador</td>
+                </tr>
+
+                <tr class="linhaone">
+                    <td class="nome">Daniel Lourenço</td>
+                    <td class="filme">Wall-E</td>
+                    <td class="filme">Oldboy</td>
+                    <td class="filme">Dangal</td>
+                </tr>
+
+                <tr class="linhaone">
+                    <td class="nome">Fabiano</td>
+                    <td class="filme">Star Wars 5</td>
+                    <td class="filme">Taxi Driver</td>
+                    <td class="filme">Toy Story</td>
+                </tr>
+
+                <caption>Brincamos um pouco com criação de tabela</caption>
+            </table>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magni ratione cupiditate? A rerum commodi tempore eius, porro asperiores voluptate fuga quis in aperiam nulla saepe, culpa, perspiciatis dolor eum!
+            
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non sequi, minima est aliquam laudantium a in quo? Corporis, placeat! Quam quisquam tempore dignissimos! Soluta harum corporis cupiditate non cum.
+        </p>
+
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi id veritatis suscipit inventore ipsa minus quas, ex sit praesentium earum quidem dignissimos doloremque laudantium sed repellat ad dolore labore animi.
+        </p>
+    </main>
+
+    
+
+</body>
+</html>
