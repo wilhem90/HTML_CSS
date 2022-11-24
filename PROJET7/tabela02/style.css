@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+#corpo{
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    width: 500px;
+    background-color: rgba(127, 255, 212, 0.333);
+}
+
+table{
+    margin: auto;
+    width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em
+}
+
+
+th, td{
+    border: 1px solid black;
+    
+}
+
+td{
+    text-align: center;
+}
+
+
+thead:nth-child(odd){
+    background-color: rgba(198, 195, 195, 0.941);
+}
+
+.me, .mh{
+    text-align: left;
+    padding-left: 10px;
+}
