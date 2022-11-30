@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 03</title>
+</head>
+<body>
+    <h1>Formulario 003</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome: <input type="text" name="nome" id="inome" placeholder="Digite o seu nome" required minlength="8"></label>
+        </p>
+        <p>
+            <label for="media">Media: <input type="number" name="imedia" id="media" placeholder="0 a 10" min="0" max="10" step="0.1" value="5"></label>
+        </p>
+        
+        <p>
+            <label for="imes">Periodo Letivo: <input type="month" name="mes" id="imes" value="2022-06"></label>
+        </p>
+        
+        <p>
+            <label for="idata">Data completo: <input type="date" name="data" id="idata" placeholder="data"></label>
+        </p>
+        
+        <p>
+            <label for="itime">A hora: <input type="datetime-local" name="time" id="itime" placeholder="time"></label>
+        </p>
+
+        <p><label for="ihora">Hora exata: <input type="time" name="hora" id="ihora" placeholder="Hora" value="01:46"></label></p>
+        
+        <p>
+            <input type="submit" value="Enviar"></input>
+            <input type="submit" value="Limpar"></input>
+        </p>
+    </form>
+</body>
+</html>
