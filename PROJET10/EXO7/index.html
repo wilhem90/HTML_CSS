@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 007</title>
+
+</head>
+<body>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Select, datalist e textarea</legend>
+        
+            <p>
+                <label for="iselect">Estado: <select name="departement" id="iselect" required>
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Grand Nord">
+                        <option>Centre</option>
+                        <option>Artibonite</option>
+                        <option>Nord</option>
+                    </optgroup>
+
+                    <optgroup label="Le grand sud">
+                        <option>Grand'anse</option>
+                        <option>Sud</option>
+                        <option>Sud-Est</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            
+            <p>
+                <p>
+                    
+                    <label for="ins">Profissão: </label>
+                    <input list="lista" name="prof" id="ins">
+                    <datalist id="lista">
+                        <option value="Administrador"></option>
+                        <option value="Economista"></option>
+                        <option value="Contador"></option>
+                        <option value="Professor"></option>
+                        <option value="Advogado"></option>
+                    </datalist>
+                </p>
+                <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>
