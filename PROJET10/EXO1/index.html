@@ -4,9 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario1</title>
+    <title>Formulario 1</title>
+
+    <!-- Estamos trabalhando com CSS no mesmo arquivo, nao esquece poderia utilizar o CSS no pasta só -->
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right, rgba(255, 255, 0, 0.475), rgba(0, 0, 255, 0.441), rgba(0, 128, 0, 0.479), rgba(255, 0, 0, 0.333));
+
+            margin: 80px;
+        }
+
+        .formulario1{
+            background-color: rgba(0, 0, 139, 0.244);
+            border: 2p solid blach;
+            width: 300px;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+            box-shadow: 3px 2px 0.9px rgba(0, 0, 0, 0.653);
+
+        }
+
+        #titulo{
+            background-color: rgba(128, 0, 128, 0.436);
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.616);
+            border: 1px solid rgba(255, 255, 255, 0.539);
+            font-weight: bolder;
+            font-size: 1.5em;
+            border-radius: 3px;
+            width: 250px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+
+        }
+
+
+        .nome, .sobrenome{
+            width: 280px;
+            color: white;
+
+        }
+
+        #enviar{
+            width: 150px;
+            background-color: rgb(0, 149, 255);
+            color: white;
+            font-weight: bolder;
+            font-size: 1em;
+            border: 1px solid rgba(0, 0, 0, 0.263);
+            border-radius: 3px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+        }
+
+        #caption{
+            font-size: 1em;
+            margin-left: 150px;
+        }
+
+    </style>
+
+
 </head>
 <body>
     
+    <p id="caption">Um formulario muito simple com css</p>
+    <form action="cadastro.php" class="formulario1" autocomplete="off" method="post">
+        <p id="titulo">Formulario 001</p>
+
+        <label for="nome">
+        <p class="nome">Nome: <input type="text" name="nome" id="nome" placeholder="Nome"></p>
+        </label>
+
+        <label for="sobrenome">
+        <p class="sobrenome">Sobrenome: <input type="password" name="sobrenome" id="sobrenome" placeholder="Sobrenome"></p>
+        </label>
+
+        <input type="submit" value="Enviar" id="enviar">
+
+    </form>
 </body>
 </html>
