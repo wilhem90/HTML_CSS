@@ -5,20 +5,27 @@
     padding: 0px;
 }
 
+:root{
+    --cor1: #150808cc;
+}
+
+
 body {
-    font-family: 'Noto Sans' , Arial, Helvetica, sans-serif;
-    background: url('/cashmaxlogo.png') center center;
-    background-repeat: no-repeat;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .main-login{
-    width: 100vw;
-    height: 100vh;
-    background: #201b2c;
+    width: 80vw;
+    height: 90vh;
+    background: #fdfdff;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 30px;
+    border: 1px solid var(--cor1);
+    box-shadow: 0px 10px 30px var(--cor1);
+    border-radius: 10px;
 }
 
 .left-login{
@@ -90,7 +97,7 @@ body {
 }
 
 .textfield > label{
-    color: #f0ffffde;
+    color: #FFFFFF;
     margin-bottom: 10px;
     font-weight: bolder;
 }
