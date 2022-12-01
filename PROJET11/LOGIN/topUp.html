@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-up</title>
+  </head>
+  <body>
+    <!-- templates/airtime.html -->
+
+  <div>
+    {{if .Success}}
+    <div>
+       <p>Your top-up is successful!</p>
+    </div>
+    {{else}}
+    <div>
+       <h1>Topup Form</h1>
+    </div>
+    <div></div>
+    <form action="/airtime.html" method="POST">
+       <input
+          type="text" placeholder="your operator's id" name="operatorid"
+          />
+       <input
+          type="text" placeholder="your top-up amount (NGN)" name="amount"
+          />
+       <input
+          type="text" placeholder="your unique reference" name="reference"
+          />
+       <input
+          type="text" placeholder="recipient's phone number" name="number"
+          />
+       <input type="text" placeholder="recipient's country code" name="countrycode"/>
+       <input  type="submit" value="send" />
+    </form>
+    {{end}}
+ </div>
+  </body>
+  </html>
