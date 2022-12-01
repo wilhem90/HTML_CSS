@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 004</title>
+</head>
+<body>
+
+    <form action="/cadastro.php" method="post" autocomplete="on">
+        <fieldset >
+            <legend><h3>Formulario 004</h3></legend>
+            <p>
+                <!-- Vamos pedir o nome -->
+                <label for="inome">Nome<input type="text" name="nome" id="inome" placeholder="O seu nome" required></label>
+            </p>
+            <p>
+            <!-- Para verificar o formato de um email, neste nao vai dizer se o email é valido ou nao -->
+                <label for="imail">Email: <input type="email" name="mail" id="imail" placeholder="E-mail" required></label>
+            </p>
+            
+            <p>
+                <!-- Para validacao de numero de telefone -->
+                <label for="itel">Telefone: <input type="tel" name="telefone" id="itel"  pattern="\d{4,5}-\d{4}$" placeholder="(00) 00000-000" required></label></p>
+            
+            <p>
+                <!-- Dois botoes: Um de type submit e outro de type reset -->
+                <input type="submit" value="Enviar"></input>
+                <input type="reset" value="Limpar"></input>
+            </p>
+                </form>
+        </fieldset>
+    
+</body>
+</html>

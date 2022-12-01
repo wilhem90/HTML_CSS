@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 006</title>
+</head>
+<body>
+
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend><h3>Color range e file</h3></legend>
+            <p><label for="icolor">Colores: <input type="color" name="colores" id="icolor"></label></p>
+            
+            <p>
+                <label for="satisfacao">Nivel de satifacao: <input type="range" name="satisfacao" id="satisfacao" min="1" max="10" value="2"></label>
+                
+            </p>
+
+            <p><label for="ifile">Foto de perfil: <input type="file" name="file" id="ifile"></label></p>
+            <p>
+                <input type="submit" value="Enviar"></input>
+                <input type="reset" value="Limpar"></input>
+            </p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
