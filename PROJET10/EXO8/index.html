@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ouput 001</title>
+    </head>
+    <body style="height: 100vh; padding: 30px; margin-top: 20px;">
+        
+        
+        
+        <form action="/cadastro.php" method="get">
+
+        <fieldset style="width: 50vw; height: 20vh;">
+            <legend style="font-size: 1.5em; text-transform: uppercase;">ex-08</legend>
+            <p>
+                <label for="in1">Numero 1: <input type="number" name="n1" id="in1" oninput="prt.innerHTML = `Saida: ${in1.value} Gourdes`" step="0.5" min="0"></label>
+            </p>
+            
+            <p>
+                <label for="in2">Numero 2: <input type="number" name="n" id="in2" oninput="prt.innerHTML = `Saida: ${in2.value} Gourdes`" step="0.1" min="0"></label>
+            </p>
+            
+            
+            <p><label for="iprt" id="prt">Saida: 00</label></p>
+            
+        </fieldset>
+        <br>
+        <hr> <!--Proximo exercicio-->
+        <br>
+    
+        
+        
+        
+        
+        <fieldset style="width: 50vw; height: 20vh;">
+            <legend style="font-size: 1.5em; text-transform: uppercase;">ex-09</legend>
+            
+                
+                <div>
+                    <label for="irange" id="irrange">A sua satisfação: <br></label>
+                    <input type="range" name="range" id="irange" oninput="saida.innerHTML = irange.value">
+                    <output id="saida">0</output>
+                </div>
+                
+        </fieldset>
+
+
+        <br>
+        <hr> <!--Proximo exercicio-->
+        <br>
+
+
+        <fieldset style="width: 50vw; height: 20vh;">
+            <legend style="font-size: 1.5em; text-transform: uppercase;">ex-010</legend>
+            <div>
+                <label for="iano">Ano nasceu: <input type="number" name="ano" id="iano" oninput="calcula()" max="2022" min="1900"></label>
+            </div>
+
+                <br>
+                <!-- <output> -->
+                    <script>
+                        function calcula() {
+                            var anoActual = new Date().getFullYear()
+                            temos.innerHTML = (anoActual-iano.value)
+                            
+                        }
+                    </script>
+    
+                    <label for="namee" id="temos">0</label>
+                <!-- </output> -->
+            
+        </fieldset>
+
+        
+
+    </form>
+
+    
+    
+</body>
+</html>
