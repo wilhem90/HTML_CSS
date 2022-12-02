@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+menu{
+    background: lightblue;
+    width: 40vw;
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+menu ul{
+    margin: 5px;
+    align-items: center;
+    list-style-type: decimal-leading-zero;
+}
+
+menu li{
+    padding-right: 10px;
+    display: inline-block;
+    font-weight: bolder;
+}
+
+
+
+#corpos{
+    text-indent: 30px;
+    margin: 10px;
+}
+
+li:hover{
+    /* outline: auto; */
+    outline-style: ridge;
+}
+
+p{
+    padding: 15px;
+    line-height: 25px;
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 30px;
+}
+
+menu, #imp{
+    display: none;
+}
+
+#corpos {
+    font-size: 1em;
+    line-height: 25px;
+}
+
+#corpos > h1 {
+    text-transform: uppercase;
+    margin: 30px;
+    
+}
+
+#data, #corpos::after{
+
+    font-family: 'Courier New', Courier, monospace;
+    content: "Este artigo foi escrito pelo escritor Wilhem Wundt Maxime";
+    font-size: 1.5em;
+}
+
+
+
