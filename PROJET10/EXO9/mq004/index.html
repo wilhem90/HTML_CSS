@@ -13,21 +13,30 @@
         <h1>Thomassique</h1>
         <span id="menuico" class="material-symbols-outlined" onclick="tocaMenu()">
             menu
-            </span>
+        </span>
         <menu id="itensMenu">
             <ul>
                 <li><a href="#1" onclick="clickLink()">Informations</a></li>
                 <li><a href="#2" onclick="clickLink()">Santé</a></li>
+                <li><a href="#5" onclick="clickLink()">Economie</a></li>
+                <li><a href="#5" onclick="clickLink()">Agriculture</a></li>
+                <li><a href="#5" onclick="clickLink()">Securité</a></li>
                 <li><a href="#3" onclick="clickLink()">Cultures</a></li>
                 <li><a href="#4" onclick="clickLink()">Sports</a></li>
                 <li><a href="#5" onclick="clickLink()">Qui sommes-nous?</a></li>
             </ul>
+
+            
+            </div>
         </menu>
     </header>
     
     <main>    
         <article>
-            <h2>THOMASSIQUE, LA VILLE QUI VOUS ACCEUILLE</h2>
+            <div id="cabeca">
+                <img id="placeImg" src="/imagens/palce_thomassique.jpg" alt="Place_Publique Thomassique">
+                <h2>THOMASSIQUE, LA VILLE QUI VOUS ACCEUILLE</h2>
+            </div>
             
             <p>
                 Le 28 Janvier c'est la fête de St Thomas d'Aquin. C’est le jour où les professeurs de philosophie et les élèves des classes terminales se donnent à cœur joie à des questions existentielles en vue d’une meilleure compréhension des problèmes de la vie et des phénomènes naturels C'est la fête des philosophes. C’est aussi le 28 janvier, la fête de Thomassique, la ville frontalière et commerciale par excellence du haut plateau central.
@@ -134,8 +143,14 @@
 
             </p>
 
+            <fieldset>
+                <legend> Auteur </legend>
+                Ives Isidor <br> ives.isidor@yahoo.com <br> 27 janvier 2014
+            </fieldset>
+            <br>
+
         </article>
-        <footer>&copy Desenvolvido por Wilhem Wundt Maxime</footer>
+        <footer>Site en construction par: Wilhem Wundt Maxime</footer>
     </main>
 
     <script>
@@ -150,7 +165,7 @@
 
         function clickLink() {
             itensMenu.style.display = 'none';
-            alert('Esta paginá não esta disponível no momento! Estamos trabalhando para deixar voçê satisfeito logo!')
+            alert('Cette page est actuellement indisponible! Nous travaillons pour vous satisfaire bientôt!')
         }
     </script>
 </body>
