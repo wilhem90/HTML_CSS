@@ -7,8 +7,9 @@
     <title>Thomassique</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/responsive.css">
 </head>
-<body>
+<body onresize="menuResize()">
     <header>
         <h1>Thomassique</h1>
         <span id="menuico" class="material-symbols-outlined" onclick="tocaMenu()">
@@ -17,13 +18,11 @@
         <menu id="itensMenu">
             <ul>
                 <li><a href="#1" onclick="clickLink()">Informations</a></li>
-                <li><a href="#2" onclick="clickLink()">Santé</a></li>
-                <li><a href="#5" onclick="clickLink()">Economie</a></li>
                 <li><a href="#5" onclick="clickLink()">Agriculture</a></li>
+                <li><a href="#5" onclick="clickLink()">Economie</a></li>
                 <li><a href="#5" onclick="clickLink()">Securité</a></li>
                 <li><a href="#3" onclick="clickLink()">Cultures</a></li>
                 <li><a href="#4" onclick="clickLink()">Sports</a></li>
-                <li><a href="#5" onclick="clickLink()">Qui sommes-nous?</a></li>
             </ul>
 
             
@@ -32,16 +31,9 @@
     </header>
     
     <main>    
-
-
-        <fieldset>
-            <iframe src="https://cdn.sportcast.life/embed77/?event=stack.html&link=1&domain=&force=https%3A%2F%2Fweakstreams.com%2Fstreams%2F10230641&ask=1670094000&lgt=3" frameborder="0" style="width: 90vw; height: 50vh;">click</iframe>
-        </fieldset>
         <article>
-            <div id="cabeca">
-                <img id="placeImg" src="/imagens/palce_thomassique.jpg" alt="Place_Publique Thomassique">
+                
                 <h2>THOMASSIQUE, LA VILLE QUI VOUS ACCEUILLE</h2>
-            </div>
             
             <p>
                 Le 28 Janvier c'est la fête de St Thomas d'Aquin. C’est le jour où les professeurs de philosophie et les élèves des classes terminales se donnent à cœur joie à des questions existentielles en vue d’une meilleure compréhension des problèmes de la vie et des phénomènes naturels C'est la fête des philosophes. C’est aussi le 28 janvier, la fête de Thomassique, la ville frontalière et commerciale par excellence du haut plateau central.
@@ -150,7 +142,7 @@
 
             <fieldset>
                 <legend> Auteur </legend>
-                Ives Isidor <br> ives.isidor@yahoo.com <br> 27 janvier 2014
+                <a href="https://www.facebook.com/ives.isidor" target="noopenner">Ives Isidor</a> <br> ives.isidor@yahoo.com <br> 27 janvier 2014
             </fieldset>
             <br>
 
@@ -171,6 +163,16 @@
         function clickLink() {
             itensMenu.style.display = 'none';
             alert('Cette page est actuellement indisponible! Nous travaillons pour vous satisfaire bientôt!')
+        }
+
+        function menuResize() {
+
+            if (window.innerWidth >= 768) {
+                itensMenu.style.display = 'block';
+            }else{
+                itensMenu.style.display = 'none';
+            }
+            
         }
     </script>
 </body>

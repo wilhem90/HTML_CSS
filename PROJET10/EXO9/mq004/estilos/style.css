@@ -67,6 +67,12 @@ article > p {
     font-size: 18px;
 }
 
+article > h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+}
+
 footer {
     text-align: center;
     background-color: rgb(165, 165, 165);
@@ -87,37 +93,15 @@ footer {
     font-size: 50px;
 }
 
-fieldset {
+fieldset > legend{
+    margin-left: 50px;
+
+}
+
+fieldset{
+    margin-left: 10px;
     padding: 10px;
-    width: 200px;
+    width: 300px;
 }
 
-fieldset > legend {
-    padding: 5px;
-    margin: 20px;
-    border: 1px solid rgb(0, 0, 0);
-}
 
-#placeImg {
-    width: 45vw;
-    background-repeat: no-repeat;
-    margin: 10px;
-    border-radius: 50px;
-}
-
-#cabeca {
-    display: block;
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    border-radius: 50px 0px;
-    background-color: rgba(199, 199, 199, 0.381);
-
-}
-
-#cabeca > h2 {
-        padding-bottom: 20px;
-        text-align: center;
-        margin-top: 15%;
-    
-}
