@@ -12,21 +12,31 @@
 
     <main>
         <section id="login">
-            <div id="imagem">
-                <h1>Foto</h1>
-            </div>
-            
             <div id="formulario">
-                <h1>Login</h1>
-                <p>
-                    Seja bem-vindo(a)novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
-                </p>
-
+                <div id="titulo">
+                    <h1>CASHMAX</h1>
+                </div>
                 <form action="login.php" method="post">
-                    <fieldset>
-                        <label for="iemail">Email: </label>
-                        <input type="text" name="email" id="iemail">
-                    </fieldset>
+                    <div id="card-email">
+                        <img src="/imagens/MAIL.png" alt="" class="icones">
+                        <input type="email" name="email" id="emailText" placeholder="Email">
+                    </div>
+
+                    <div id="card-password">
+                        <img src="/imagens/lock.png" alt="" class="icones">
+                        <input type="password" name="password" id="senha" placeholder="Password">
+                    </div>
+
+                    <div id="card-btn-esqueci">
+                        <button type="submit" id="esqueci">Esqueci a senha?</button>
+                    </div>
+
+
+                    <div id="card-btn-enviar">
+                        <button type="submit" id="enviar">CONETAR</button>
+                    </div>
+
+                
                 </form>
             </div>
         </section>
