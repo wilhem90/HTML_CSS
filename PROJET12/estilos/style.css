@@ -27,7 +27,6 @@ body, html{
     height: 100vh;
     width: 100vw;
     background: url('/imagens/CashMax.png') center no-repeat ;
-    background-color: #00BCD3FF;
     background-size: contain;
 }
 
