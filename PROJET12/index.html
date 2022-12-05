@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CASHMAX</title>
-
-    <link rel="stylesheet" href="estilos/style.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
-</head>
-<body>
-
-    <main>
-        <section id="login">
-            <div id="formulario">
-                <div id="titulo">
-                    <h1>CASHMAX</h1>
-                </div>
-                <form action="login.php" method="post">
-                    <div id="card-email">
-                        <span class="material-symbols-sharp">
-                            mail
-                            </span>
-                        <input type="email" name="email" id="emailText" placeholder="Email">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CASHMAX</title>
+        
+        <link rel="stylesheet" href="estilos/style.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+        
+        
+    </head>
+    <body>
+        
+        <main>
+            <section id="login">
+                <div id="formulario">
+                    <div id="titulo">
+                        <h1>CASHMAX</h1>
                     </div>
+                    <form action="login.php" method="post">
+                        <div id="card-email">
+                            <span class="material-symbols-sharp">mail</span>
+                            
+                            <input type="email" name="email" id="emailText" placeholder="Email">
+                        </div>
+                        
+                        <div id="card-password">
+                            <span class="material-symbols-sharp">lock</span>
+                            <input type="password" name="password" id="senha" placeholder="Password">
+                            
+                            <div class="material-symbols-sharp" id="visiOff" onclick="visibiliOff()">visibility_off</div>
 
-                    <div id="card-password">
-                        <img src="/imagens/lock.png" alt="" class="icones">
-                        <input type="password" name="password" id="senha" placeholder="Password">
-
-                        <img src="/imagens/DONT_SEE.png" alt="" class="icones">
-                    </div>
-
+                            <div class="material-symbols-sharp" id="visible"  onclick="visibiliOff()">visibility</div>
+                        
+                        
+                        </div>
+                    
                     <div id="card-btn-esqueci">
                         <button type="submit" id="esqueci">Esqueci a senha?</button>
                     </div>
-
+                    
                     <div id="card-btn-enviar">
                         <button type="submit" id="enviar">CONETAR</button>
                     </div>
-
+                    
                 </form>
             </div>
         </section>
     </main>
-    
+
+    <script src="validateLogin.js"></script>
 </body>
 </html>
